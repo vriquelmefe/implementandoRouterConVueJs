@@ -9,17 +9,6 @@
 
 <script>
 export default {
-   methods: {
-    paginar(siguiente){
-      let entrada = parseInt(this.$route.params.entrada)
-      if (siguiente)
-        return entrada < 10 ? `/blog/${entrada + 1}` :
-              `/blog/${entrada}`
-      else
-        return entrada > 1 ? `/blog/${entrada - 1}` :
-              `/blog/${entrada}`
-    }
-  },
 
 }
 </script>
